@@ -1,9 +1,9 @@
-package com.crud.portiolio;
+package controllers;
 
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import models.Atleta;
 import org.springframework.web.bind.annotation.*;
+import repositories.AtletaRepository;
 
 import java.util.List;
 

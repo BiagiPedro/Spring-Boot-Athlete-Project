@@ -1,4 +1,4 @@
-package com.crud.portiolio;
+package models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
