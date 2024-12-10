@@ -23,7 +23,7 @@ public class AtletaController {
     }
 
     @PostMapping("/atleta")
-    public Atleta save(@RequestBody Atleta atleta){    //ERRO AQUI
+    public Atleta save(@RequestBody Atleta atleta){
         return atletaRepository.save(atleta);
     }
 

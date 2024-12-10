@@ -8,8 +8,6 @@ import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Entity
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "atleta")
 public class Atleta {
 
@@ -26,5 +24,9 @@ public class Atleta {
 
     @Column(name = "tx_posico")
     private String posicao;
+
+    @ManyToOne
+    @JoinColumn(name = "id_clube" , referencedColumnName = "id_clube" )
+    private Clube clube;
 
 }
